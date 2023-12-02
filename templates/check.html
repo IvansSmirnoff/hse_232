@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="{{url_for('check')}}" method="post">
+    <p>
+        введите через запятую два жанра, которые мы сравним по оценкам критиков
+    </p>
+    <input type="text" name="our_params" placeholder="вводите тут"/>
+    <button type="submit">посчитать</button>
+</form>
+<p>{{result}}</p>
+
+{% endblock %}

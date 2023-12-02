@@ -1,0 +1,24 @@
+docker image build -t <name_of_your_image> .
+
+1st launch
+docker run <name of your image>
+
+docker ps
+CONTAINER ID   IMAGE         COMMAND            CREATED              STATUS                          PORTS     NAMES
+df38de247142   twothreetwo   "python3 app.py"   About a minute ago   Exited (0) 2 seconds ago                  serene_solomon
+
+following launches
+docker start <container id>
+
+docker ps -a
+also shows killed containers
+
+docker image ls
+shows all images
+
+docker stop <container id>
+
+docker rm <container id>
+
+docker rmi <id_of_your_image>
+
